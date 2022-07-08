@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @ToString
-//@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 //@RequiredArgsConstructor
 //@AllArgsConstructor(staticName = "of")
@@ -29,5 +29,7 @@ public class Usuario {
     private String teléfono;
     @Column(name="contraseña")
     private String password;
+
+
 
 }

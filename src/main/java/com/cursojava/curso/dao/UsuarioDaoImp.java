@@ -20,7 +20,7 @@ public class UsuarioDaoImp implements UsuarioDao{
     private EntityManager entityManager; // sirve para hacer la conexión a la base de datos
 
     @Autowired
-    @Qualifier("MD5Util")
+    @Qualifier("Argon2Util")
     private EncryptorUtil encriptor;
 
     @Override
